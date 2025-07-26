@@ -1,0 +1,288 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef2f6; /* Lightest blue-gray */
+    color: #333; /* Dark text for readability */
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #2c3e50; /* Dark blue-gray */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #34495e; /* Slightly lighter dark blue-gray */
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Arrange items horizontally */
+    justify-content: center; /* Center the navigation links */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: block; /* Make the whole area clickable */
+}
+
+nav ul li a:hover {
+    background-color: #4a627d; /* Lighter shade on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+nav ul li a.active {
+    background-color: #4a627d; /* Active tab color */
+    pointer-events: none; /* Disable click on active tab */
+    cursor: default;
+}
+
+/* Main Content Container */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eef2f6;
+    padding-bottom: 10px;
+}
+
+/* Section specific styling */
+.highlight-section {
+    background-color: #f0f4f8; /* Light blue-gray for highlight */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 25px;
+    border-left: 5px solid #3498db; /* A pop of blue */
+}
+
+.highlight-section h3 {
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+/* Article List Styling (for info-articles.html) */
+.article-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.article-card {
+    background-color: #fdfdfd;
+    border: 1px solid #e0e6ed;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.article-card h3 {
+    color: #34495e;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.article-card p {
+    font-size: 0.95em;
+    color: #555;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #3498db;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #2980b9;
+}
+
+/* Update List Styling (for latest-updates.html) */
+.update-list {
+    list-style: none;
+    padding: 0;
+}
+
+.update-list li {
+    background-color: #fdfdfd;
+    border: 1px solid #e0e6ed;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    padding: 15px;
+    font-size: 1.05em;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.update-list li strong {
+    color: #34495e;
+}
+
+/* Form Styling (for contact-us.html, feedback.html, login.html) */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #444;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group textarea,
+.form-group select {
+    width: calc(100% - 22px); /* Account for padding and border */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 100px;
+}
+
+.button {
+    background-color: #28a745; /* Green for action buttons */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+.message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Specific colors for messages */
+.message.success {
+    background-color: #d4edda; /* Light green */
+    color: #155724; /* Dark green */
+}
+
+.message.error {
+    background-color: #f8d7da; /* Light red */
+    color: #721c24; /* Dark red */
+}
+
+/* Contact Details */
+.contact-details p {
+    margin-bottom: 10px;
+    font-size: 1.05em;
+}
+
+.contact-details strong {
+    color: #34495e;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #2c3e50;
+    color: white;
+    font-size: 0.9em;
+    border-top: 1px solid #34495e;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .container {
+        margin: 20px 15px;
+        padding: 20px;
+    }
+
+    .article-list {
+        grid-template-columns: 1fr; /* Stack articles on small screens */
+    }
+}
+

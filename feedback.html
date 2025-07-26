@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Info Hub - Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Community Info Hub!</h1>
+        <p>Your go-to place for community news and resources.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="info-articles.html">Info Articles</a></li>
+            <li><a href="latest-updates.html">Latest Updates</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="feedback.html" class="active">Feedback</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h2>Share Your Feedback</h2>
+        <p>Your opinions help us improve! Please let us know your thoughts on our community hub.</p>
+
+        <form id="feedbackForm" class="feedback-form">
+            <div class="form-group">
+                <label for="rating">Overall Satisfaction:</label>
+                <select id="rating" name="rating" required>
+                    <option value="">Select a rating</option>
+                    <option value="5">Excellent</option>
+                    <option value="4">Good</option>
+                    <option value="3">Neutral</option>
+                    <option value="2">Fair</option>
+                    <option value="1">Poor</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="comments">Comments (optional):</label>
+                <textarea id="comments" name="comments" rows="7"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="email_feedback">Your Email (optional, for follow-up):</label>
+                <input type="email" id="email_feedback" name="email">
+            </div>
+            <button type="submit" class="button">Submit Feedback</button>
+            <p id="feedbackMessage" class="message"></p>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Community Info Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

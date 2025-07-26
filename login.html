@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Info Hub - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Community Info Hub!</h1>
+        <p>Your go-to place for community news and resources.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="info-articles.html">Info Articles</a></li>
+            <li><a href="latest-updates.html">Latest Updates</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="login.html" class="active">Login</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h2>Simulated Login</h2>
+        <p>This is a demonstration of a login form. No actual authentication takes place.</p>
+
+        <form id="loginForm" class="login-form">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="button">Log In</button>
+            <p id="loginMessage" class="message"></p>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Community Info Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
